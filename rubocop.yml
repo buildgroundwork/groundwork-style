@@ -342,6 +342,7 @@ Metrics/BlockLength:
     - app/views/**/*
     - config/**/*
     - spec/**/*
+    - db/migrate/*
 
 Metrics/ClassLength:
   Exclude:
