@@ -13,7 +13,7 @@ GIT
 PATH
   remote: .
   specs:
-    groundwork-style (0.1.0)
+    groundwork-style (0.79.0)
       rubocop (~> 0.79)
       rubocop-performance (~> 1.5)
       rubocop-rails (~> 2.4)
