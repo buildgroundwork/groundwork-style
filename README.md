@@ -14,19 +14,23 @@ end
 
 ## Usage
 
-Create a `.rubocop.yml` with the following directives:
+Create a `.rubocop.yml` with the following directives (or pick and choose):
 
 ```yaml
 inherit_gem:
   groundwork-style:
     - rubocop.yml
+    - rubocop_performance.yml
+    - rubocop_rake.yml
     - rubocop_rails.yml
     - rubocop_rspec.yml
 ```
 
+You can include, exclude, or modify cop configuration in your `.rubocop.yml` file.
+
 You do not need to include rubocop directly in your application's dependencies (unless you're using an unpublished version of rubocop).
 
-This will include the `rubocop`, `rubocop-rails`, and `rubocop-rspec` gems.
+This will include the necessary `rubocop-*` gems.
 
 ## License
 
