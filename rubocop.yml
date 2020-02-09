@@ -1,0 +1,356 @@
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+    - IgnoredMethods
+
+AllCops:
+  Include:
+    - '**/*.rb'
+
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6
+
+#===============
+# Layout
+#===============
+# Prefer this:
+# do_something(foo,
+#   bar
+# )
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+# Prefer this:
+#
+# Foo.new(wibble: [
+#   something,
+#   something_else
+# ])
+#
+# to this:
+#
+# Foo.new(wibble: [
+#                   something,
+#                   something_else
+#                 ])
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+# Prefer this:
+#
+# Foo.new(wibble: {
+#   a: something,
+#   b: something_else
+# })
+#
+# to this:
+#
+# Foo.new(wibble: {
+#                   a: something,
+#                   b: something_else
+#                 })
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/HashAlignment:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+
+# This is not 1986.
+Layout/LineLength:
+  Enabled: false
+
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  SupportedTypes:
+    - case
+    - class
+    - if
+    - kwbegin
+    - module
+
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: true
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+
+# This is the default VIM indentation.
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+# This is the default VIM indentation.
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+# No need to provide for ASCII art in assignments (the default is to allow
+# #= and #=> to have multiple spaces).
+Layout/SpaceAroundOperators:
+  AllowForAlignment: false
+
+Layout/SpaceBeforeComma:
+  EnforcedStyle: space_after_colon
+
+Layout/SpaceInsideParens:
+  EnforcedStyle: space_after_colon
+
+Layout/TrailingEmptyLines:
+  EnforcedStyle: final_blank_line
+
+#===============
+# Naming
+#===============
+Naming/FileName:
+  Exclude:
+    - 'gems/**/*'
+
+#===============
+# Style
+#===============
+Style/AutoResourceCleanup:
+  Enabled: true
+
+# JSON matchers involve a lot of chaining, which looks much better with {...}
+# as oppposed to do/end.
+Style/BlockDelimiters:
+  Exclude:
+    - spec/views/**/*
+
+# We prefer the compact style, but issues with Rails const loading sometimes
+# require using the nested style.
+Style/ClassAndModuleChildren:
+  Enabled: false
+  EnforcedStyle: compact
+
+Style/CollectionMethods:
+  Enabled: true
+  # ...ect
+  PreferredMethods:
+    map: 'collect'
+    map!: 'collect!'
+    reduce: 'inject'
+    reduce!: 'inject!'
+    find: 'detect'
+    keep_if: 'select!'
+    delete_if: 'reject!'
+
+# Use backticks on single-line commands, and %x on multi-line commands.
+Style/CommandLiteral:
+  EnforcedStyle: mixed
+  AllowInnerBackticks: false
+
+# Let's be honest, if you're putting 'HACK' comments into your code then you
+# need more than static style analysis.
+Style/CommentAnnotation:
+  Keywords:
+    - TODO
+
+Style/Documentation:
+  Enabled: false
+
+# Sometimes we have to coerce types to actual boolean types in JBuilder views,
+# in order to get the right JSON type.
+Style/DoubleNegation:
+  Exclude:
+    - '**/*.jbuilder'
+
+# #each_with_object and #inject have different roles; apples to oranges.
+Style/EachWithObject:
+  Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
+  Enabled: false
+
+# This cop crashes on JBuilder templates.
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - '**/*.jbuilder'
+
+# Guard clauses produce multiple exit points from a function.  Extracting a
+# method makes for cleaner method bodies.
+Style/GuardClause:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+# Sometimes nested conditionals are conceptually orthogonal.  Reducing the
+# nesting may be logically correct, but not make the logic easier to follow
+# or reason about.
+Style/IfInsideElse:
+  Enabled: false
+
+# json.(... is idiomatic for JBuilder
+Style/LambdaCall:
+  Exclude:
+    - '**/**.json.jbuilder'
+
+Style/MethodCalledOnDoEndBlock:
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
+  Enabled: true
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  IgnoredMethods:
+    - require
+    - require_relative
+    - raise
+
+# Don't require else clauses for if statements; sometimes a nil return value is
+# just what the doctor ordered.
+Style/MissingElse:
+  Enabled: true
+  EnforcedStyle: case
+
+# Both have their place.
+Style/MixinGrouping:
+  Enabled: false
+
+# JSON matchers involve a lot of chaining
+Style/MultilineBlockChain:
+  Exclude:
+    - spec/views/**/*
+
+# Starting a (multi-line) conditional with 'unless' is confusing.
+Style/NegatedIf:
+  Enabled: false
+
+# No one likes this style.
+Style/Next:
+  Enabled: false
+
+# No explicit nil checks.
+Style/NonNilCheck:
+  IncludeSemanticChanges: true
+
+Style/OptionHash:
+  Enabled: true
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '[]'
+
+# This seems to apply entirely to the Hash#has_key? and Hash#has_value? methods.
+# The debate on deprecating these methods seems anything but resolved, and the
+# latest Ruby documentation doesn't mention them as deprecated.  Given that
+# English speakers seem to consistently prefer them over the alternatives (#key?
+# and #value?), we'll hold onto them for now.
+Style/PreferredHashMethods:
+  Enabled: false
+
+# We don't pass backtraces, so this should be fine.
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+# Use slashes on single-line regexes, and %r on multi-line regexes.
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+  AllowInnerSlashes: false
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+# e.g. subject { render; rendered }
+Style/Semicolon:
+  Exclude:
+    - spec/**/*
+
+Style/Send:
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#prefer-public-send'
+  Enabled: true
+
+# Throwing an exception does not necessarily mean failure.
+Style/SignalException:
+  Description: 'Checks for proper usage of fail and raise.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#fail-method'
+  Enabled: false
+
+# Specific, context-dependent method names can provide more clarity than
+# general names.
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Exclude:
+    # auto-generated
+    - bin/**/*
+
+# Ignore auto-generated files, and the like.
+Style/SymbolArray:
+  Exclude:
+    - Gemfile
+    - lib/tasks/*.rake
+
+Style/TrivialAccessors:
+  # Allows trivial writers that don't end in an equal sign. e.g.
+  #
+  # def on_exception(action)
+  #   @on_exception=action
+  # end
+  # on_exception :restart
+  #
+  # Commonly used in DSLs
+  AllowDSLWriters: true
+  # Allow methods like this:
+  #
+  # def foo?
+  #   @foo
+  # end
+  AllowPredicates: true
+
+#===============
+# Lint
+#===============
+# When this is enabled, all Rspec files generate offenses.
+# We prefer the unparenthesized style.
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+# This issue is rare, and in the case that it comes up there's generally a very
+# specific reason to generate a loop in a particular way.
+Lint/Loop:
+  Enabled: false
+
+Lint/SuppressedException:
+  Exclude:
+    - spec/**/*
+
+Lint/Void:
+  Exclude:
+    - spec/**/*
+
+#===============
+# Metrics
+#===============
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Metrics/BlockLength:
+  Exclude:
+    - app/views/**/*
+    - config/**/*
+    - spec/**/*
+
+Metrics/ClassLength:
+  Exclude:
+    - db/migrate/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+

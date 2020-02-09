@@ -1,0 +1,69 @@
+require: rubocop-rspec
+
+AllCops:
+  Include:
+    - '**/*_spec.rb'
+
+RSpec/Be:
+  Enabled: false
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - if
+    - unless
+    - 'on'
+    - which
+    - that
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/views/**/*
+
+RSpec/EmptyLineAfterExample:
+  Enabled: false
+
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: false
+
+RSpec/EmptyLineAfterHook:
+  Enabled: false
+
+RSpec/EmptyLineAfterSubject:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Exclude:
+    - spec/support/**/*
+
+RSpec/ExampleWording:
+  Exclude:
+    - spec/support/**/*
+
+RSpec/ExpectInHook:
+  Enabled: false
+
+RSpec/ImplicitBlockExpectation:
+  Enabled: false
+
+RSpec/ImplicitExpect:
+  EnforcedStyle: should
+
+RSpec/ImplicitSubject:
+  EnforcedStyle: single_statement_only
+
+RSpec/ItBehavesLike:
+  EnforcedStyle: it_should_behave_like
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/support/**/*
+
+RSpec/NestedGroups:
+  Max: 10
+
+RSpec/VerifiedDoubles:
+  Enabled: false
+

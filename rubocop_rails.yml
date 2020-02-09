@@ -1,0 +1,56 @@
+require: rubocop-rails
+
+AllCops:
+  Include:
+    - '**/*.rb'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/*.gemspec'
+  Exclude:
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+
+  TargetRailsVersion: 6.0
+
+Rails/DynamicFindBy:
+  Whitelist:
+    # This is a Rails finder method
+    - find_by_sql
+
+    # We add this for proper finding in controllers
+    - find_by_param!
+
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+# NULL columns do not necessarily have a valid default value.  Sometimes
+# we want a NULL value to be an error; a default value would cover that
+# error.
+Rails/NotNullColumn:
+  Enabled: false
+
+# #read_attribute and #write_attribute are easier to see, and
+# arguable more clear, than the self[attr] syntax.
+Rails/ReadWriteAttribute:
+  Enabled: false
+
+# We want to skip validations in specs to keep them nice and fast.
+# We should know when to skip validations outside of specs
+Rails/SkipsModelValidations:
+  Enabled: false
+
+# Add Rails-specific file exclusions
+Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - Gemfile
+    - config.ru
+    - config/*
+    - spec/**/*
+    - db/migrate/*
+  IgnoredMethods:
+    - task
+
