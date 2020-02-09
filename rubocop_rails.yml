@@ -53,4 +53,5 @@ Style/MethodCallWithArgsParentheses:
     - db/migrate/*
   IgnoredMethods:
     - task
+    - desc
 
