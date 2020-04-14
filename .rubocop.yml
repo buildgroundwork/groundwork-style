@@ -4,4 +4,5 @@ inherit_from:
   - rubocop_rspec.yml
   - rubocop_rake.yml
   - rubocop_performance.yml
+  - rubocop_thread_safety.yml
 

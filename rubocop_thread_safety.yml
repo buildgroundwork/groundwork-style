@@ -1,0 +1,6 @@
+require: rubocop-thread_safety
+
+ThreadSafety/ClassAndModuleAttributes:
+  Exclude:
+    - spec/**/*
+
