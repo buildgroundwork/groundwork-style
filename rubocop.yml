@@ -89,6 +89,9 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 # No need to provide for ASCII art in assignments (the default is to allow
 # #= and #=> to have multiple spaces).
 Layout/SpaceAroundOperators:
@@ -164,6 +167,9 @@ Style/DoubleNegation:
 Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
   Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: true
 
 # This cop crashes on JBuilder templates.
 Style/FrozenStringLiteralComment:
