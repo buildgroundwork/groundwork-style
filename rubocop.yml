@@ -21,6 +21,9 @@ AllCops:
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
 # Prefer this:
 #
 # Foo.new(wibble: [
@@ -285,6 +288,9 @@ Style/SignalException:
 # general names.
 Style/SingleLineBlockParams:
   Enabled: false
+
+Style/SlicingWithRange:
+  Enabled: true
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
