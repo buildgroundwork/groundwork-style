@@ -329,6 +329,9 @@ Style/TrivialAccessors:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
 # This issue is rare, and in the case that it comes up there's generally a very
 # specific reason to generate a loop in a particular way.
 Lint/Loop:
