@@ -261,6 +261,12 @@ Style/PreferredHashMethods:
 Style/RaiseArgs:
   EnforcedStyle: compact
 
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
 # Use slashes on single-line regexes, and %r on multi-line regexes.
 Style/RegexpLiteral:
   EnforcedStyle: mixed
@@ -336,6 +342,9 @@ Lint/DeprecatedOpenSSLConstant:
 # specific reason to generate a loop in a particular way.
 Lint/Loop:
   Enabled: false
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
 
 Lint/RaiseException:
   Enabled: true
