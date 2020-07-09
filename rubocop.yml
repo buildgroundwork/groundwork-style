@@ -129,7 +129,13 @@ Naming/FileName:
 #===============
 # Style
 #===============
+Style/AccessorGrouping:
+  Enabled: true
+
 Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/BisectedAttrAccessor:
   Enabled: true
 
 # JSON matchers involve a lot of chaining, which looks much better with {...}
@@ -270,6 +276,9 @@ Style/PreferredHashMethods:
 # We don't pass backtraces, so this should be fine.
 Style/RaiseArgs:
   EnforcedStyle: compact
+
+Style/RedundantAssignment:
+  Enabled: true
 
 Style/RedundantFetchBlock:
   Enabled: true
