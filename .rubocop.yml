@@ -7,3 +7,6 @@ inherit_from:
   - rubocop_thread_safety.yml
   - rubocop_i18n.yml
 
+RailsI18n/DecorateString:
+  Enabled: false
+

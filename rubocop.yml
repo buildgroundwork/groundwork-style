@@ -1,3 +1,7 @@
+require:
+  - ./lib/rubocop/cop/layout/space_before_comma_plus.rb
+  - ./lib/rubocop/cop/layout/space_inside_parens_plus.rb
+
 inherit_mode:
   merge:
     - Include
@@ -101,9 +105,15 @@ Layout/SpaceAroundOperators:
   AllowForAlignment: false
 
 Layout/SpaceBeforeComma:
+  Enabled: false
+
+Layout/SpaceBeforeCommaPlus:
   EnforcedStyle: space_after_colon
 
 Layout/SpaceInsideParens:
+  Enabled: false
+
+Layout/SpaceInsideParensPlus:
   EnforcedStyle: space_after_colon
 
 Layout/TrailingEmptyLines:
