@@ -132,6 +132,10 @@ Naming/FileName:
 Style/AccessorGrouping:
   Enabled: true
 
+# We allow the [*a] style array coercion.
+Style/ArrayCoercion:
+  Enabled: false
+
 Style/AutoResourceCleanup:
   Enabled: true
 
@@ -143,6 +147,10 @@ Style/BisectedAttrAccessor:
 Style/BlockDelimiters:
   Exclude:
     - spec/views/**/*
+
+
+Style/CaseLikeIf:
+  Enabled: true
 
 # We prefer the compact style, but issues with Rails const loading sometimes
 # require using the nested style.
@@ -200,7 +208,13 @@ Style/FrozenStringLiteralComment:
 Style/GuardClause:
   Enabled: false
 
+Style/HashAsLastArrayItem:
+  Enabled: true
+
 Style/HashEachMethods:
+  Enabled: true
+
+Style/HashLikeCase:
   Enabled: true
 
 Style/HashTransformKeys:
@@ -278,6 +292,9 @@ Style/RaiseArgs:
   EnforcedStyle: compact
 
 Style/RedundantAssignment:
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire:
   Enabled: true
 
 Style/RedundantFetchBlock:
@@ -358,6 +375,9 @@ Lint/AmbiguousBlockAssociation:
   Enabled: false
 
 Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/DuplicateElsifCondition:
   Enabled: true
 
 # This issue is rare, and in the case that it comes up there's generally a very

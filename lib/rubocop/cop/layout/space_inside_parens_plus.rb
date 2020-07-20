@@ -103,9 +103,10 @@ module RuboCop
         end
 
         def violation?(token1)
-          if style == :space
+          case style
+          when :space
             !token1.space_after?
-          elsif style == :no_space
+          when :no_space
             token1.space_after?
           else # :space_after_colon
             @kwarg = kwarg?(token1)
