@@ -23,11 +23,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency("rubocop", "~> 0.88.0")
-  spec.add_dependency("rubocop-i18n", "~> 2.0")
-  spec.add_dependency("rubocop-performance", "~> 1.5")
-  spec.add_dependency("rubocop-rails", "~> 2.4")
-  spec.add_dependency("rubocop-rake", "~> 0.5")
-  spec.add_dependency("rubocop-rspec", "~> 1.37")
+  spec.add_dependency("rubocop-i18n", "~> 2.0.2")
+  spec.add_dependency("rubocop-performance", "~> 1.7.1")
+  spec.add_dependency("rubocop-rails", "~> 2.7.1")
+  spec.add_dependency("rubocop-rake", "~> 0.5.1")
+  spec.add_dependency("rubocop-rspec", "~> 1.42")
   spec.add_dependency("rubocop-thread_safety", "~> 0.3")
 
   spec.add_development_dependency("rake", "~> 13.0")
