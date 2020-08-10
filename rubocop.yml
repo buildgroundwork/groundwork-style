@@ -148,7 +148,6 @@ Style/BlockDelimiters:
   Exclude:
     - spec/views/**/*
 
-
 Style/CaseLikeIf:
   Enabled: true
 
@@ -195,6 +194,10 @@ Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
   Enabled: false
 
+# Sometimes using yield is more clear.
+Style/ExplicitBlockArgument:
+  Enabled: false
+
 Style/ExponentialNotation:
   Enabled: true
 
@@ -202,6 +205,9 @@ Style/ExponentialNotation:
 Style/FrozenStringLiteralComment:
   Exclude:
     - '**/*.jbuilder'
+
+Style/GlobalStdStream:
+  Enabled: true
 
 # Guard clauses produce multiple exit points from a function.  Extracting a
 # method makes for cleaner method bodies.
@@ -272,6 +278,9 @@ Style/Next:
 Style/NonNilCheck:
   IncludeSemanticChanges: true
 
+Style/OptionalBooleanParameter:
+  Enabled: true
+
 Style/OptionHash:
   Enabled: true
 
@@ -329,12 +338,18 @@ Style/SignalException:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#fail-method'
   Enabled: false
 
+Style/SingleArgumentDig:
+  Enabled: true
+
 # Specific, context-dependent method names can provide more clarity than
 # general names.
 Style/SingleLineBlockParams:
   Enabled: false
 
 Style/SlicingWithRange:
+  Enabled: true
+
+Style/StringConcatenation:
   Enabled: true
 
 Style/StringLiterals:
@@ -374,10 +389,22 @@ Style/TrivialAccessors:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
 Lint/DuplicateElsifCondition:
+  Enabled: true
+
+Lint/DuplicateRescueException:
+  Enabled: true
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+
+Lint/FloatComparison:
   Enabled: true
 
 # This issue is rare, and in the case that it comes up there's generally a very
@@ -385,10 +412,19 @@ Lint/DuplicateElsifCondition:
 Lint/Loop:
   Enabled: false
 
+Lint/MissingSuper:
+  Enabled: true
+
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+
 Lint/RaiseException:
+  Enabled: true
+
+Lint/SelfAssignment:
   Enabled: true
 
 Lint/StructNewOverride:
@@ -397,6 +433,12 @@ Lint/StructNewOverride:
 Lint/SuppressedException:
   Exclude:
     - spec/**/*
+
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+
+Lint/UnreachableLoop:
+  Enabled: true
 
 Lint/Void:
   Exclude:

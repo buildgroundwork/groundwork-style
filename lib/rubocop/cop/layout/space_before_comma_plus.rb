@@ -50,7 +50,7 @@ module RuboCop
 
         def autocorrect(pos)
           if @space_missing
-            ->(corrector) { corrector.replace(pos, pos.source + " ") }
+            ->(corrector) { corrector.replace(pos, "#{pos.source} ") }
           else
             PunctuationCorrector.remove_space(pos)
           end
