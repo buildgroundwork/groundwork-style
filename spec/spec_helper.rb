@@ -48,9 +48,5 @@ RSpec.configure do |config|
     config.filter_run_excluding(broken_on: :ruby_head)
   end
   # rubocop:enable Style/IfUnlessModifier
-
-  config.after do
-    RuboCop::PathUtil.reset_pwd
-  end
 end
 
