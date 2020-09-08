@@ -19,6 +19,9 @@ AllCops:
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
 
+Rails/AfterCommitOverride:
+  Enabled: true
+
 Rails/DynamicFindBy:
   Whitelist:
     # This is a Rails finder method
@@ -90,6 +93,13 @@ Rails/RenderPlainText:
 Rails/ShortI18n:
   Enabled: false
 
+# We prefer multi-line SQL.
+Rails/SquishedSQLHeredocs:
+  Enabled: false
+
 Rails/WhereExists:
+  Enabled: true
+
+Rails/WhereNot:
   Enabled: true
 

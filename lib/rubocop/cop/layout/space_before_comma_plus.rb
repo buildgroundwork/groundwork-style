@@ -37,7 +37,8 @@ module RuboCop
       #   each { |a, b| }
       #   def a(x: , y: nil); end
       #
-      class SpaceBeforeCommaPlus < Cop
+      class SpaceBeforeCommaPlus < Base
+        extend AutoCorrector
         include SpaceBeforePunctuation
         include ConfigurableEnforcedStyle
         include KwargNode
@@ -48,11 +49,11 @@ module RuboCop
           "comma" if token.comma?
         end
 
-        def autocorrect(pos)
+        def autocorrect(corrector, pos)
           if @space_missing
-            ->(corrector) { corrector.replace(pos, "#{pos.source} ") }
+            corrector.replace(pos, "#{pos.source} ")
           else
-            PunctuationCorrector.remove_space(pos)
+            PunctuationCorrector.remove_space(corrector, pos)
           end
         end
 

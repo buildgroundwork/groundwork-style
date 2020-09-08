@@ -157,6 +157,10 @@ Style/ClassAndModuleChildren:
   Enabled: false
   EnforcedStyle: compact
 
+Style/ClassMethodsDefinitions:
+  Enabled: true
+  EnforcedStyle: self_class
+
 Style/CollectionMethods:
   Enabled: true
   # ...ect
@@ -168,6 +172,11 @@ Style/CollectionMethods:
     find: 'detect'
     keep_if: 'select!'
     delete_if: 'reject!'
+
+# This rule is marked "unsafe" because it may affect logic incorrectly.
+# This check is best left to the judgement of human brains.
+Style/CombinableLoops:
+  Enabled: false
 
 # Use backticks on single-line commands, and %x on multi-line commands.
 Style/CommandLiteral:
@@ -234,6 +243,9 @@ Style/HashTransformValues:
 # or reason about.
 Style/IfInsideElse:
   Enabled: false
+
+Style/KeywordParametersOrder:
+  Enabled: true
 
 # json.(... is idiomatic for JBuilder
 Style/LambdaCall:
@@ -315,6 +327,9 @@ Style/RedundantRegexpCharacterClass:
 Style/RedundantRegexpEscape:
   Enabled: true
 
+Style/RedundantSelfAssignment:
+  Enabled: true
+
 # Use slashes on single-line regexes, and %r on multi-line regexes.
 Style/RegexpLiteral:
   EnforcedStyle: mixed
@@ -348,6 +363,11 @@ Style/SingleLineBlockParams:
 
 Style/SlicingWithRange:
   Enabled: true
+
+# Sometimes a nested condition is conceptually distinct from the outer condition
+# so combining them may be more concise but is conceptually incorrect.
+Style/SoleNestedConditional:
+  Enabled: false
 
 Style/StringConcatenation:
   Enabled: true
@@ -398,10 +418,16 @@ Lint/DeprecatedOpenSSLConstant:
 Lint/DuplicateElsifCondition:
   Enabled: true
 
+Lint/DuplicateRequire:
+  Enabled: true
+
 Lint/DuplicateRescueException:
   Enabled: true
 
 Lint/EmptyConditionalBody:
+  Enabled: true
+
+Lint/EmptyFile:
   Enabled: true
 
 Lint/FloatComparison:
@@ -437,7 +463,13 @@ Lint/SuppressedException:
 Lint/TopLevelReturnWithArgument:
   Enabled: true
 
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
 Lint/UnreachableLoop:
+  Enabled: true
+
+Lint/UselessMethodDefinition:
   Enabled: true
 
 Lint/Void:

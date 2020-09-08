@@ -5,15 +5,16 @@ module RuboCop
     # Common functionality for cops checking for space before
     # punctuation.
     module SpaceBeforePunctuation
-      def investigate(processed_source)
+      def on_new_investigation
         each_violation(processed_source.tokens) do |token, pos_before|
-          add_offense(pos_before, location: pos_before,
-                                  message: message_for(token))
+          add_offense(pos_before, message: message_for(token)) do |corrector|
+            autocorrect(corrector, pos_before)
+          end
         end
       end
 
-      def autocorrect(space)
-        PunctuationCorrector.remove_space(space)
+      def autocorrect(corrector, pos)
+        PunctuationCorrector.remove_space(corrector, pos)
       end
 
       private

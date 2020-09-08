@@ -49,7 +49,8 @@ module RuboCop
       #   def y(x: ); end
       #   y(x: 1)
       #
-      class SpaceInsideParensPlus < Cop
+      class SpaceInsideParensPlus < Base
+        extend AutoCorrector
         include ConfigurableEnforcedStyle
         include RangeHelp
         include KwargNode
@@ -60,22 +61,18 @@ module RuboCop
           space_after_colon: "No space after colon inside parentheses."
         }.freeze
 
-        def investigate(processed_source)
-          @processed_source = processed_source
-
+        def on_new_investigation
           each_violation(processed_source.tokens) do |token1, token2|
             range = range_for(token1, token2)
-            add_offense(range, location: range)
+            add_offense(range) { |corrector| autocorrect(corrector, range) }
           end
         end
 
-        def autocorrect(range)
-          lambda do |corrector|
-            if style == :space || style == :space_after_colon && @kwarg
-              corrector.insert_before(range, " ")
-            else
-              corrector.remove(range)
-            end
+        def autocorrect(corrector, range)
+          if style == :space || style == :space_after_colon && @kwarg
+            corrector.insert_before(range, " ")
+          else
+            corrector.remove(range)
           end
         end
 

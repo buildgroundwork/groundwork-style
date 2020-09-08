@@ -24,3 +24,6 @@ Performance/Squeeze:
 Performance/StringInclude:
   Enabled: true
 
+Performance/Sum:
+  Enabled: true
+
