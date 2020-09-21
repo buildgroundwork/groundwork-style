@@ -27,6 +27,7 @@ Layout/ArgumentAlignment:
 
 Layout/BeginEndAlignment:
   Enabled: true
+  EnforcedStyleAlignWith: begin
 
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
@@ -75,7 +76,6 @@ Layout/MultilineArrayBraceLayout:
 
 Layout/MultilineAssignmentLayout:
   Enabled: true
-  EnforcedStyle: same_line
   SupportedTypes:
     - case
     - class
