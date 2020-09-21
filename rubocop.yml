@@ -25,6 +25,9 @@ AllCops:
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
+Layout/BeginEndAlignment:
+  Enabled: true
+
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 
@@ -72,6 +75,7 @@ Layout/MultilineArrayBraceLayout:
 
 Layout/MultilineAssignmentLayout:
   Enabled: true
+  EnforcedStyle: same_line
   SupportedTypes:
     - case
     - class
@@ -412,6 +416,9 @@ Lint/AmbiguousBlockAssociation:
 Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
 
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
@@ -431,6 +438,9 @@ Lint/EmptyFile:
   Enabled: true
 
 Lint/FloatComparison:
+  Enabled: true
+
+Lint/IdentityComparison:
   Enabled: true
 
 # This issue is rare, and in the case that it comes up there's generally a very
@@ -470,6 +480,9 @@ Lint/UnreachableLoop:
   Enabled: true
 
 Lint/UselessMethodDefinition:
+  Enabled: true
+
+Lint/UselessTimes:
   Enabled: true
 
 Lint/Void:
