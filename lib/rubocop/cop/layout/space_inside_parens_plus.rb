@@ -87,7 +87,7 @@ module RuboCop
             next unless same_line?(token1, token2)
             next unless violation?(token1)
 
-            yield token1, token2
+            yield(token1, token2)
           end
         end
 

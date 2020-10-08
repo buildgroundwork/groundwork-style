@@ -23,7 +23,7 @@ module RuboCop
         tokens.each_cons(2) do |token1, token2|
           next unless kind(token2) && violation?(token1, token2)
 
-          yield token2, pos_before_punctuation(token1, token2)
+          yield(token2, pos_before_punctuation(token1, token2))
         end
       end
 
