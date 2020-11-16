@@ -3,7 +3,22 @@ require: rubocop-performance
 Performance/AncestorsInclude:
   Enabled: true
 
+Performance/ArraySemiInfiniteRangeSlice:
+  Enabled: true
+
 Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+
+Performance/BlockGivenWithExplicitBlock:
+  Enabled: true
+
+Performance/CollectionLiteralInLoop:
+  Enabled: true
+
+Performance/ConstantRegexp:
+  Enabled: true
+
+Performance/MethodObjectAsBlock:
   Enabled: true
 
 Performance/RedundantSortBlock:

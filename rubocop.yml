@@ -130,10 +130,18 @@ Naming/FileName:
   Exclude:
     - 'gems/**/*'
 
+# We want to have symbols that contain underscore-delimited digits
+# (e.g. :some_table_deprecated_2020_11_16)
+Naming/VariableNumber:
+  CheckSymbols: false
+
 #===============
 # Style
 #===============
 Style/AccessorGrouping:
+  Enabled: true
+
+Style/ArgumentsForwarding:
   Enabled: true
 
 # We allow the [*a] style array coercion.
@@ -168,6 +176,9 @@ Style/ClassMethodsDefinitions:
   Enabled: true
   EnforcedStyle: self_class
 
+Style/CollectionCompact:
+  Enabled: true
+
 Style/CollectionMethods:
   Enabled: true
   # ...ect
@@ -198,6 +209,9 @@ Style/CommentAnnotation:
 
 Style/Documentation:
   Enabled: false
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: true
 
 # Sometimes we have to coerce types to actual boolean types in JBuilder views,
 # in order to get the right JSON type.
@@ -289,9 +303,15 @@ Style/MultilineBlockChain:
 Style/NegatedIf:
   Enabled: false
 
+Style/NegatedIfElseCondition:
+  Enabled: true
+
 # No one likes this style.
 Style/Next:
   Enabled: false
+
+Style/NilLambda:
+  Enabled: true
 
 # No explicit nil checks.
 Style/NonNilCheck:
@@ -385,6 +405,9 @@ Style/StringLiterals:
     # auto-generated
     - bin/**/*
 
+Style/SwapValues:
+  Enabled: true
+
 # Ignore auto-generated files, and the like.
 Style/SymbolArray:
   Exclude:
@@ -425,6 +448,9 @@ Lint/ConstantDefinitionInBlock:
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
+Lint/DuplicateBranch:
+  Enabled: true
+
 Lint/DuplicateElsifCondition:
   Enabled: true
 
@@ -433,6 +459,20 @@ Lint/DuplicateRequire:
 
 Lint/DuplicateRescueException:
   Enabled: true
+
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: true
+
+# We don't want to allow empty blocks. We don't want blocks with comments to be
+# an exceptions to this rule.
+Lint/EmptyBlock:
+  Enabled: true
+  AllowComments: false
+
+# Sometimes it's perfectly fine to have empty classes.
+# (e.g., an empty STI class, or Exception class)
+Lint/EmptyClass:
+  Enabled: false
 
 Lint/EmptyConditionalBody:
   Enabled: true
@@ -460,6 +500,9 @@ Lint/MissingSuper:
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+
 Lint/OutOfRangeRegexpRef:
   Enabled: true
 
@@ -479,10 +522,16 @@ Lint/SuppressedException:
   Exclude:
     - spec/**/*
 
+Lint/ToEnumArguments:
+  Enabled: true
+
 Lint/TopLevelReturnWithArgument:
   Enabled: true
 
 Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
+Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
 Lint/UnreachableLoop:
