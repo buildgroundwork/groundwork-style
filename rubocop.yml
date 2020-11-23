@@ -339,6 +339,9 @@ Style/PreferredHashMethods:
 Style/RaiseArgs:
   EnforcedStyle: compact
 
+Style/RedundantArgument:
+  Enabled: true
+
 Style/RedundantAssignment:
   Enabled: true
 
