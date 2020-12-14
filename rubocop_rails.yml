@@ -22,6 +22,9 @@ Rails/ActiveRecordCallbacksOrder:
 Rails/AfterCommitOverride:
   Enabled: true
 
+Rails/AttributeDefaultBlockValue:
+  Enabled: true
+
 Rails/DynamicFindBy:
   Whitelist:
     # This is a Rails finder method
@@ -96,6 +99,9 @@ Rails/ShortI18n:
 # We prefer multi-line SQL.
 Rails/SquishedSQLHeredocs:
   Enabled: false
+
+Rails/WhereEquals:
+  Enabled: true
 
 Rails/WhereExists:
   Enabled: true
