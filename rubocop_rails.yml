@@ -75,7 +75,7 @@ Style/MethodCallWithArgsParentheses:
     - config.ru
     - config/*
     - spec/**/*
-    - db/migrate/*
+    - db/**/*
   IgnoredMethods:
     - task
     - desc
