@@ -108,6 +108,9 @@ Layout/SpaceAroundMethodCallOperator:
 Layout/SpaceAroundOperators:
   AllowForAlignment: false
 
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+
 Layout/SpaceBeforeComma:
   Enabled: false
 
@@ -248,6 +251,9 @@ Style/HashAsLastArrayItem:
   Enabled: true
 
 Style/HashEachMethods:
+  Enabled: true
+
+Style/HashExcept:
   Enabled: true
 
 Style/HashLikeCase:
@@ -437,6 +443,9 @@ Style/TrivialAccessors:
 #===============
 # Lint
 #===============
+Lint/AmbiguousAssignment:
+  Enabled: true
+
 # When this is enabled, all Rspec files generate offenses.
 # We prefer the unparenthesized style.
 Lint/AmbiguousBlockAssociation:
