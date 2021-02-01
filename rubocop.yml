@@ -274,6 +274,9 @@ Style/HashTransformValues:
 Style/IfInsideElse:
   Enabled: false
 
+Style/IfWithBooleanLiteralBranches:
+  Enabled: true
+
 Style/KeywordParametersOrder:
   Enabled: true
 
@@ -524,7 +527,13 @@ Lint/MixedRegexpCaptureTypes:
 Lint/NoReturnInBeginEndBlocks:
   Enabled: true
 
+Lint/NumberedParameterAssignment:
+  Enabled: true
+
 Lint/OutOfRangeRegexpRef:
+  Enabled: true
+
+Lint/OrAssignmentToConstant:
   Enabled: true
 
 Lint/RaiseException:
@@ -546,6 +555,9 @@ Lint/SuppressedException:
   Exclude:
     - spec/**/*
 
+Lint/SymbolConversion:
+  Enabled: true
+
 Lint/ToEnumArguments:
   Enabled: true
 
@@ -553,6 +565,9 @@ Lint/TopLevelReturnWithArgument:
   Enabled: true
 
 Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
+Lint/TripleQuotes:
   Enabled: true
 
 Lint/UnexpectedBlockArity:
