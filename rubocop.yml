@@ -253,6 +253,9 @@ Style/GuardClause:
 Style/HashAsLastArrayItem:
   Enabled: true
 
+Style/HashConversion:
+  Enabled: true
+
 Style/HashEachMethods:
   Enabled: true
 
@@ -614,3 +617,8 @@ Metrics/MethodLength:
 Metrics/ParameterLists:
   CountKeywordArgs: false
 
+#===============
+# Gemspec
+#===============
+Gemspec/DateAssignment:
+  Enabled: true
