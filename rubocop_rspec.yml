@@ -34,9 +34,10 @@ RSpec/EmptyLineAfterHook:
 RSpec/EmptyLineAfterSubject:
   Enabled: false
 
+# Lots of spec examples break across multiple lines.
 RSpec/ExampleLength:
   Exclude:
-    - spec/support/**/*
+    - spec/**/*
 
 RSpec/ExampleWording:
   Exclude:
@@ -65,6 +66,9 @@ RSpec/MultipleExpectations:
 # case multiple `let` calls may make complete sense; we leave this up to the
 # judgement of the implementer.
 RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NamedSubject:
   Enabled: false
 
 RSpec/NestedGroups:

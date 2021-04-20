@@ -3,7 +3,6 @@
 require "spec_helper"
 require "rubocop/cop/layout/space_before_comma_plus"
 
-# rubocop:disable RSpec/ExampleLength
 RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
   subject(:cop) { described_class.new(config) }
 
@@ -122,5 +121,4 @@ RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
     RUBY
   end
 end
-# rubocop:enable RSpec/ExampleLength
 

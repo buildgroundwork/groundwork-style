@@ -43,6 +43,10 @@ Rails/FindById:
 Rails/Inquiry:
   Enabled: true
 
+# Why add an inverse_of if we don't need it?
+Rails/InverseOf:
+  Enabled: false
+
 Rails/MailerName:
   Enabled: true
 

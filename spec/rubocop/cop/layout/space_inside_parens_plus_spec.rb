@@ -3,7 +3,6 @@
 require "spec_helper"
 require "rubocop/cop/layout/space_inside_parens_plus"
 
-# rubocop:disable RSpec/ExampleLength
 RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
   context "when EnforcedStyle is no_space" do
     let(:cop_config) { { "EnforcedStyle" => "no_space" } }
@@ -233,5 +232,4 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
   end
 end
-# rubocop:enable RSpec/ExampleLength
 
