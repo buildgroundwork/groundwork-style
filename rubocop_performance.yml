@@ -18,8 +18,10 @@ Performance/CollectionLiteralInLoop:
 Performance/ConstantRegexp:
   Enabled: true
 
+# This cop is not strictly correct.  `collect {...}.compact` will remove only
+# nil values, while `filter_map {...}` will remove all non-truthy values.
 Performance/MapCompact:
-  Enabled: true
+  Enabled: false
 
 Performance/MethodObjectAsBlock:
   Enabled: true
