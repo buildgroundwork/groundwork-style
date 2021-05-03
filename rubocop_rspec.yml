@@ -34,10 +34,13 @@ RSpec/EmptyLineAfterHook:
 RSpec/EmptyLineAfterSubject:
   Enabled: false
 
-# Lots of spec examples break across multiple lines.
+# Be lenient on long examples that have large arrays, hashes, or heredocs
 RSpec/ExampleLength:
-  Exclude:
-    - spec/**/*
+  Max: 10
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
 
 RSpec/ExampleWording:
   Exclude:
