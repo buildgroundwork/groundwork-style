@@ -23,10 +23,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency("rubocop", "~> 1.13")
-  spec.add_dependency("rubocop-performance", "~> 1.11")
+  spec.add_dependency("rubocop-performance", "~> 1.11", ">= 1.11.1")
   spec.add_dependency("rubocop-rails", "~> 2.9", ">= 2.9.1")
   spec.add_dependency("rubocop-rake", "~> 0.5", ">= 0.5.1")
-  spec.add_dependency("rubocop-rspec", "~> 2.2")
+  spec.add_dependency("rubocop-rspec", "~> 2.3")
   spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.2")
 
   spec.add_development_dependency("rake", "~> 13.0.3")
