@@ -33,6 +33,11 @@ Rails/DynamicFindBy:
     # We add this for proper finding in controllers
     - find_by_param!
 
+# This expects we'll copy all environment variables into the Rails config,
+# which seems like a waste of time.
+Rails/EnvironmentVariableAccess:
+  Enabled: false
+
 Rails/FilePath:
   EnforcedStyle: arguments
 
@@ -96,6 +101,9 @@ Rails/RenderInline:
 Rails/RenderPlainText:
   Enabled: true
 
+Rails/RequireDependency:
+  Enabled: true
+
 # No need to enforce brevity over clarity.
 Rails/ShortI18n:
   Enabled: false
@@ -103,6 +111,9 @@ Rails/ShortI18n:
 # We prefer multi-line SQL.
 Rails/SquishedSQLHeredocs:
   Enabled: false
+
+Rails/TimeZoneAssignment:
+  Enabled: true
 
 Rails/WhereEquals:
   Enabled: true
