@@ -280,6 +280,9 @@ Style/IfInsideElse:
 Style/IfWithBooleanLiteralBranches:
   Enabled: true
 
+Style/InPatternThen:
+  Enabled: true
+
 Style/KeywordParametersOrder:
   Enabled: true
 
@@ -313,6 +316,9 @@ Style/MixinGrouping:
 Style/MultilineBlockChain:
   Exclude:
     - spec/views/**/*
+
+Style/MultilineInPatternThen:
+  Enabled: true
 
 # Starting a (multi-line) conditional with 'unless' is confusing.
 Style/NegatedIf:
@@ -349,6 +355,9 @@ Style/PercentLiteralDelimiters:
 # and #value?), we'll hold onto them for now.
 Style/PreferredHashMethods:
   Enabled: false
+
+Style/QuotedSymbols:
+  Enabled: true
 
 # We don't pass backtraces, so this should be fine.
 Style/RaiseArgs:
@@ -505,6 +514,9 @@ Lint/EmptyConditionalBody:
   Enabled: true
 
 Lint/EmptyFile:
+  Enabled: true
+
+Lint/EmptyInPattern:
   Enabled: true
 
 Lint/FloatComparison:
