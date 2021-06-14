@@ -49,6 +49,9 @@ RSpec/ExampleWording:
 RSpec/ExpectInHook:
   Enabled: false
 
+RSpec/IdenticalEqualityAssertion:
+  Enabled: true
+
 RSpec/ImplicitBlockExpectation:
   Enabled: false
 
@@ -76,6 +79,9 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 10
+
+RSpec/Rails/AvoidSetupHook:
+  Enabled: true
 
 RSpec/StubbedMock:
   Enabled: true
