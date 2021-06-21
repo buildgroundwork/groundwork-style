@@ -19,6 +19,9 @@ AllCops:
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
 
+Rails/AddColumnIndex:
+  Enabled: true
+
 Rails/AfterCommitOverride:
   Enabled: true
 
@@ -33,10 +36,16 @@ Rails/DynamicFindBy:
     # We add this for proper finding in controllers
     - find_by_param!
 
+Rails/EagerEvaluationLogMessage:
+  Enabled: true
+
 # This expects we'll copy all environment variables into the Rails config,
 # which seems like a waste of time.
 Rails/EnvironmentVariableAccess:
   Enabled: false
+
+Rails/ExpandedDateRange:
+  Enabled: true
 
 Rails/FilePath:
   EnforcedStyle: arguments
@@ -44,6 +53,9 @@ Rails/FilePath:
 # ActiveRecord::Base#find is a disaster.
 Rails/FindById:
   Enabled: false
+
+Rails/I18nLocaleAssignment:
+  Enabled: true
 
 Rails/Inquiry:
   Enabled: true
@@ -113,6 +125,9 @@ Rails/SquishedSQLHeredocs:
   Enabled: false
 
 Rails/TimeZoneAssignment:
+  Enabled: true
+
+Rails/UnusedIgnoredColumns:
   Enabled: true
 
 Rails/WhereEquals:
