@@ -2,7 +2,7 @@
 
 module Groundwork
   module Style
-    VERSION = "0.87.1"
+    VERSION = "1.18"
   end
 end
 

@@ -67,6 +67,10 @@ Layout/FirstHashElementIndentation:
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
 
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+
 # This is not 1986.
 Layout/LineLength:
   Enabled: false
@@ -132,6 +136,9 @@ Layout/TrailingEmptyLines:
 Naming/FileName:
   Exclude:
     - 'gems/**/*'
+
+Naming/InclusiveLanguage:
+  Enabled: true
 
 # We want to have symbols that contain underscore-delimited digits
 # (e.g. :some_table_deprecated_2020_11_16)
