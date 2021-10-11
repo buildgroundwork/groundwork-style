@@ -477,6 +477,10 @@ Style/TrivialAccessors:
 Lint/AmbiguousAssignment:
   Enabled: true
 
+# Operator precedence is con. ven. tion. al.
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+
 # When this is enabled, all Rspec files generate offenses.
 # We prefer the unparenthesized style.
 Lint/AmbiguousBlockAssociation:
@@ -539,6 +543,9 @@ Lint/HashCompareByIdentity:
   Enabled: true
 
 Lint/IdentityComparison:
+  Enabled: true
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
 Lint/LambdaWithoutLiteralBlock:
