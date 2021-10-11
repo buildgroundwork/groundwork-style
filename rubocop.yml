@@ -391,6 +391,9 @@ Style/RedundantRegexpEscape:
 Style/RedundantSelfAssignment:
   Enabled: true
 
+Style/RedundantSelfAssignmentBranch:
+  Enabled: true
+
 # Use slashes on single-line regexes, and %r on multi-line regexes.
 Style/RegexpLiteral:
   EnforcedStyle: mixed
@@ -478,6 +481,9 @@ Lint/AmbiguousAssignment:
 # We prefer the unparenthesized style.
 Lint/AmbiguousBlockAssociation:
   Enabled: false
+
+Lint/AmbiguousRange:
+  Enabled: true
 
 Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
