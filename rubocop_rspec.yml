@@ -46,6 +46,9 @@ RSpec/ExampleWording:
   Exclude:
     - spec/support/**/*
 
+RSpec/ExcessiveDocstringSpacing:
+  Enabled: true
+
 RSpec/ExpectInHook:
   Enabled: false
 
@@ -84,6 +87,9 @@ RSpec/Rails/AvoidSetupHook:
   Enabled: true
 
 RSpec/StubbedMock:
+  Enabled: true
+
+RSpec/SubjectDeclaration:
   Enabled: true
 
 RSpec/VerifiedDoubles:
