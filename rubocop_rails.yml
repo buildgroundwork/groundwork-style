@@ -107,6 +107,9 @@ Rails/Pluck:
 Rails/PluckInWhere:
   Enabled: true
 
+Rails/RedundantTravelBack:
+  Enabled: true
+
 Rails/RenderInline:
   Enabled: true
 
