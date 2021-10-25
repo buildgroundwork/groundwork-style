@@ -23,12 +23,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # rubocop 1.16.1 has a bug: https://github.com/rubocop/rubocop/issues/9861
-  spec.add_dependency("rubocop", "~> 1.22", ">= 1.22.1")
-  spec.add_dependency("rubocop-performance", "~> 1.11", ">= 1.11.3")
-  spec.add_dependency("rubocop-rails", "~> 2.11", ">= 2.11.1")
-  spec.add_dependency("rubocop-rake", "~> 0.5", ">= 0.5.1")
-  spec.add_dependency("rubocop-rspec", "~> 2.4")
-  spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.2")
+  spec.add_dependency("rubocop", "~> 1.22", ">= 1.22.2")
+  spec.add_dependency("rubocop-performance", "~> 1.11", ">= 1.11.5")
+  spec.add_dependency("rubocop-rails", "~> 2.12", ">= 2.12.4")
+  spec.add_dependency("rubocop-rake", "~> 0.6")
+  spec.add_dependency("rubocop-rspec", "~> 2.5")
+  spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.4")
 
   spec.add_development_dependency("rake", "~> 13.0.3")
   spec.add_development_dependency("rspec", "~> 3.10")
