@@ -352,6 +352,9 @@ Style/NumberedParameters:
 Style/NumberedParametersLimit:
   Enabled: true
 
+Style/OpenStructUse:
+  Enabled: true
+
 Style/OptionalBooleanParameter:
   Enabled: true
 
@@ -633,6 +636,9 @@ Lint/UnreachableLoop:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/UselessRuby2Keywords:
+  Enabled: true
+
 Lint/UselessTimes:
   Enabled: true
 
@@ -669,6 +675,9 @@ Metrics/ParameterLists:
 # Gemspec
 #===============
 Gemspec/DateAssignment:
+  Enabled: true
+
+Gemspec/RequireMFA:
   Enabled: true
 
 #===============
