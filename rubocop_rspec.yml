@@ -52,6 +52,10 @@ RSpec/ExcessiveDocstringSpacing:
 RSpec/ExpectInHook:
   Enabled: false
 
+# How to make your factory methods even harder to find.
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: false
+
 RSpec/IdenticalEqualityAssertion:
   Enabled: true
 
