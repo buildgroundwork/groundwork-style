@@ -28,6 +28,12 @@ Rails/AfterCommitOverride:
 Rails/AttributeDefaultBlockValue:
   Enabled: true
 
+Rails/CompactBlank:
+  Enabled: true
+
+Rails/DurationArithmetic:
+  Enabled: true
+
 Rails/DynamicFindBy:
   Whitelist:
     # This is a Rails finder method
@@ -84,6 +90,9 @@ Rails/NotNullColumn:
 Rails/ReadWriteAttribute:
   Enabled: false
 
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: true
+
 # We want to skip validations in specs to keep them nice and fast.
 # We should know when to skip validations outside of specs
 Rails/SkipsModelValidations:
@@ -117,6 +126,9 @@ Rails/RenderPlainText:
   Enabled: true
 
 Rails/RequireDependency:
+  Enabled: true
+
+Rails/RootJoinChain:
   Enabled: true
 
 # No need to enforce brevity over clarity.
