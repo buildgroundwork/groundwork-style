@@ -7,6 +7,12 @@ AllCops:
 RSpec/Be:
   Enabled: false
 
+RSpec/BeEq:
+  Enabled: true
+
+RSpec/BeNil:
+  Enabled: false
+
 RSpec/ContextWording:
   Prefixes:
     - when
