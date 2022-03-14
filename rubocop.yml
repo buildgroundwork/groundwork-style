@@ -346,6 +346,9 @@ Style/NegatedIf:
 Style/NegatedIfElseCondition:
   Enabled: true
 
+Style/NestedFileDirname:
+  Enabled: true
+
 # No one likes this style.
 Style/Next:
   Enabled: false
