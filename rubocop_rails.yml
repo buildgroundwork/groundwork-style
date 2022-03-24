@@ -16,6 +16,9 @@ AllCops:
 
   TargetRailsVersion: 6.0
 
+Rails/ActionControllerTestCase:
+  Enabled: true
+
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
 
@@ -29,6 +32,15 @@ Rails/AttributeDefaultBlockValue:
   Enabled: true
 
 Rails/CompactBlank:
+  Enabled: true
+
+Rails/DeprecatedActiveModelErrorsMethods:
+  Enabled: true
+
+Rails/DuplicateAssociation:
+  Enabled: true
+
+Rails/DuplicateScope:
   Enabled: true
 
 Rails/DurationArithmetic:
@@ -60,7 +72,13 @@ Rails/FilePath:
 Rails/FindById:
   Enabled: false
 
+Rails/I18nLazyLookup:
+  Enabled: true
+
 Rails/I18nLocaleAssignment:
+  Enabled: true
+
+Rails/I18nLocaleTexts:
   Enabled: true
 
 Rails/Inquiry:
@@ -74,6 +92,9 @@ Rails/MailerName:
   Enabled: true
 
 Rails/MatchRoute:
+  Enabled: true
+
+Rails/MigrationClassName:
   Enabled: true
 
 Rails/NegateInclude:
@@ -140,6 +161,9 @@ Rails/SquishedSQLHeredocs:
   Enabled: false
 
 Rails/TimeZoneAssignment:
+  Enabled: true
+
+Rails/TransactionExitStatement:
   Enabled: true
 
 Rails/UnusedIgnoredColumns:
