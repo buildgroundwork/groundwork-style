@@ -247,6 +247,30 @@ Style/ExplicitBlockArgument:
 Style/ExponentialNotation:
   Enabled: true
 
+# What does this rule tell us?  This rule enforces the use of #fetch when
+# reading an environment variable, because ENV['FOO'] will return nil if the
+# env var `FOO` is not set.  But, code has no control over whether env vars are
+# set or not.  If the env var is required then the code must have an explicit
+# check, with an appropriate error condition for the case when it's not set. If
+# the env var is not required, then the code must have an explicit check, with
+# no error condition necessary.  So, this simply changes this:
+#
+# ```
+#   if (foo = ENV['FOO'])
+#     ...
+# ```
+#
+# to
+#
+# ```
+#   if (foo = ENV.fetch('FOO', nil))
+#     ...
+# ```
+#
+# More verbose, but does the extra `nil` add anything?
+Style/FetchEnvVar:
+  Enabled: false
+
 Style/FileRead:
   Enabled: true
 
@@ -365,6 +389,9 @@ Style/NumberedParameters:
   EnforcedStyle: disallow
 
 Style/NumberedParametersLimit:
+  Enabled: true
+
+Style/ObjectThen:
   Enabled: true
 
 Style/OpenStructUse:
@@ -704,5 +731,8 @@ Gemspec/RequireMFA:
 #===============
 # Security
 #===============
+Security/CompoundHash:
+  Enabled: true
+
 Security/IoMethods:
   Enabled: true
