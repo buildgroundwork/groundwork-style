@@ -240,6 +240,9 @@ Style/EachWithObject:
 Style/EndlessMethod:
   Enabled: true
 
+Style/EnvHome:
+  Enabled: true
+
 # Sometimes using yield is more clear.
 Style/ExplicitBlockArgument:
   Enabled: false
@@ -723,6 +726,9 @@ Metrics/ParameterLists:
 # Gemspec
 #===============
 Gemspec/DateAssignment:
+  Enabled: true
+
+Gemspec/DependencyVersion:
   Enabled: true
 
 Gemspec/RequireMFA:
