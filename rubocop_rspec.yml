@@ -13,6 +13,9 @@ RSpec/BeEq:
 RSpec/BeNil:
   Enabled: false
 
+RSpec/ChangeByZero:
+  Enabled: true
+
 RSpec/ContextWording:
   Prefixes:
     - when
