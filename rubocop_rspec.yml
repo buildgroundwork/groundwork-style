@@ -13,6 +13,9 @@ RSpec/BeEq:
 RSpec/BeNil:
   Enabled: false
 
+RSpec/Capybara/SpecificMatcher:
+  Enabled: true
+
 RSpec/ChangeByZero:
   Enabled: true
 
@@ -97,6 +100,9 @@ RSpec/NestedGroups:
   Max: 10
 
 RSpec/Rails/AvoidSetupHook:
+  Enabled: true
+
+RSpec/Rails/HaveHttpStatus:
   Enabled: true
 
 RSpec/StubbedMock:

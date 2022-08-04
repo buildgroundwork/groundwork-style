@@ -6,7 +6,7 @@ inherit_mode:
   merge:
     - Include
     - Exclude
-    - IgnoredMethods
+    - AllowedMethods
 
 AllCops:
   Include:
@@ -66,6 +66,12 @@ Layout/FirstHashElementIndentation:
 
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
+
+Layout/LineContinuationLeadingSpace:
+  Enabled: true
+
+Layout/LineContinuationSpacing:
+  Enabled: true
 
 Layout/LineEndStringConcatenationIndentation:
   Enabled: true
@@ -237,6 +243,9 @@ Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
   Enabled: false
 
+Style/EmptyHeredoc:
+  Enabled: true
+
 Style/EndlessMethod:
   Enabled: true
 
@@ -346,10 +355,6 @@ Style/MethodCalledOnDoEndBlock:
 
 Style/MethodCallWithArgsParentheses:
   Enabled: true
-  IgnoredMethods:
-    - require
-    - require_relative
-    - raise
 
 # Don't require else clauses for if statements; sometimes a nil return value is
 # just what the doctor ordered.
@@ -559,6 +564,9 @@ Lint/BinaryOperatorWithIdenticalOperands:
 Lint/ConstantDefinitionInBlock:
   Enabled: true
 
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
 Lint/DeprecatedConstants:
   Enabled: true
 
@@ -626,6 +634,9 @@ Lint/MissingSuper:
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
+Lint/NonAtomicFileOperation:
+  Enabled: true
+
 Lint/NoReturnInBeginEndBlocks:
   Enabled: true
 
@@ -648,6 +659,9 @@ Lint/RedundantSafeNavigation:
   Enabled: true
 
 Lint/RefinementImportMethods:
+  Enabled: true
+
+Lint/RequireRangeParentheses:
   Enabled: true
 
 Lint/RequireRelativeSelfPath:
@@ -728,9 +742,6 @@ Metrics/ParameterLists:
 #===============
 # Gemspec
 #===============
-Gemspec/DateAssignment:
-  Enabled: true
-
 Gemspec/DependencyVersion:
   Enabled: true
 

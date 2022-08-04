@@ -37,6 +37,10 @@ Rails/CompactBlank:
 Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
 
+# Whether this is easier to read is a matter of opinion.
+Rails/DotSeparatedKeys:
+  Enabled: false
+
 Rails/DuplicateAssociation:
   Enabled: true
 
@@ -127,7 +131,7 @@ Style/MethodCallWithArgsParentheses:
     - config/*
     - spec/**/*
     - db/**/*
-  IgnoredMethods:
+  AllowedMethods:
     - task
     - desc
 
@@ -152,6 +156,9 @@ Rails/RequireDependency:
 Rails/RootJoinChain:
   Enabled: true
 
+Rails/RootPublicPath:
+  Enabled: true
+
 # No need to enforce brevity over clarity.
 Rails/ShortI18n:
   Enabled: false
@@ -160,8 +167,15 @@ Rails/ShortI18n:
 Rails/SquishedSQLHeredocs:
   Enabled: false
 
+Rails/StripHeredoc:
+  Enabled: true
+
 Rails/TimeZoneAssignment:
   Enabled: true
+
+Rails/ToFormattedS:
+  Enabled: true
+  EnforcedStyle: to_formatted_s
 
 Rails/TransactionExitStatement:
   Enabled: true
