@@ -355,6 +355,8 @@ Style/MethodCalledOnDoEndBlock:
 
 Style/MethodCallWithArgsParentheses:
   Enabled: true
+  AllowedMethods:
+    - raise
 
 # Don't require else clauses for if statements; sometimes a nil return value is
 # just what the doctor ordered.
