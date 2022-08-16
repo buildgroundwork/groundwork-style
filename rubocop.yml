@@ -343,6 +343,9 @@ Style/LambdaCall:
   Exclude:
     - '**/**.json.jbuilder'
 
+Style/MagicCommentFormat:
+  Enabled: true
+
 Style/MapCompactWithConditionalBlock:
   Enabled: true
 
