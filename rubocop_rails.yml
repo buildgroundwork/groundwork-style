@@ -16,10 +16,16 @@ AllCops:
 
   TargetRailsVersion: 6.0
 
+Rails/ActionControllerFlashBeforeRender:
+  Enabled: true
+
 Rails/ActionControllerTestCase:
   Enabled: true
 
 Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/ActiveSupportOnLoad:
   Enabled: true
 
 Rails/AddColumnIndex:
@@ -76,6 +82,9 @@ Rails/FilePath:
 Rails/FindById:
   Enabled: false
 
+Rails/FreezeTime:
+  Enabled: true
+
 Rails/I18nLazyLookup:
   Enabled: true
 
@@ -118,10 +127,22 @@ Rails/ReadWriteAttribute:
 Rails/RedundantPresenceValidationOnBelongsTo:
   Enabled: true
 
+Rails/RootPathnameMethods:
+  Enabled: true
+
 # We want to skip validations in specs to keep them nice and fast.
 # We should know when to skip validations outside of specs
 Rails/SkipsModelValidations:
   Enabled: false
+
+Rails/ToSWithArgument:
+  Enabled: true
+
+Rails/TopLevelHashWithIndifferentAccess:
+  Enabled: true
+
+Rails/WhereMissing:
+  Enabled: true
 
 # Add Rails-specific file exclusions
 Style/MethodCallWithArgsParentheses:
