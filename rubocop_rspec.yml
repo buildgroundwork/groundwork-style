@@ -13,10 +13,16 @@ RSpec/BeEq:
 RSpec/BeNil:
   Enabled: false
 
+RSpec/Capybara/SpecificFinders:
+  Enabled: true
+
 RSpec/Capybara/SpecificMatcher:
   Enabled: true
 
 RSpec/ChangeByZero:
+  Enabled: true
+
+RSpec/ClassCheck:
   Enabled: true
 
 RSpec/ContextWording:
@@ -98,6 +104,9 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 10
+
+RSpec/NoExpectationExample:
+  Enabled: true
 
 RSpec/Rails/AvoidSetupHook:
   Enabled: true
