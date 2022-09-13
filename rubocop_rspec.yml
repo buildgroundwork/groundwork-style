@@ -3,6 +3,10 @@ require: rubocop-rspec
 AllCops:
   Include:
     - '**/*_spec.rb'
+RSpec:
+  Language:
+    Expectations:
+      - will
 
 RSpec/Be:
   Enabled: false
