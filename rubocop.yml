@@ -413,6 +413,9 @@ Style/ObjectThen:
 Style/OpenStructUse:
   Enabled: true
 
+Style/OperatorMethodCall:
+  Enabled: true
+
 Style/OptionalBooleanParameter:
   Enabled: true
 
@@ -463,6 +466,9 @@ Style/RedundantSelfAssignment:
   Enabled: true
 
 Style/RedundantSelfAssignmentBranch:
+  Enabled: true
+
+Style/RedundantStringEscape:
   Enabled: true
 
 # Use slashes on single-line regexes, and %r on multi-line regexes.
@@ -582,6 +588,9 @@ Lint/DuplicateBranch:
   Enabled: true
 
 Lint/DuplicateElsifCondition:
+  Enabled: true
+
+Lint/DuplicateMagicComment:
   Enabled: true
 
 Lint/DuplicateRequire:
