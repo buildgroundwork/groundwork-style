@@ -17,6 +17,12 @@ RSpec/BeEq:
 RSpec/BeNil:
   Enabled: false
 
+RSpec/Capybara/NegationMatcher:
+  Enabled: true
+
+RSpec/Capybara/SpecificActions:
+  Enabled: true
+
 RSpec/Capybara/SpecificFinders:
   Enabled: true
 
@@ -74,6 +80,9 @@ RSpec/ExcessiveDocstringSpacing:
 RSpec/ExpectInHook:
   Enabled: false
 
+RSpec/FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+
 # How to make your factory methods even harder to find.
 RSpec/FactoryBot/SyntaxMethods:
   Enabled: false
@@ -116,6 +125,12 @@ RSpec/Rails/AvoidSetupHook:
   Enabled: true
 
 RSpec/Rails/HaveHttpStatus:
+  Enabled: true
+
+RSpec/Rails/InferredSpecType:
+  Enabled: true
+
+RSpec/SortMetadata:
   Enabled: true
 
 RSpec/StubbedMock:
