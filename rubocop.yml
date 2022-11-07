@@ -447,6 +447,9 @@ Style/RedundantArgument:
 Style/RedundantAssignment:
   Enabled: true
 
+Style/RedundantEach:
+  Enabled: true
+
 Style/RedundantFileExtensionInRequire:
   Enabled: true
 
