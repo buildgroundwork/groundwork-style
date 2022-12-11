@@ -167,6 +167,9 @@ Style/ArgumentsForwarding:
 Style/ArrayCoercion:
   Enabled: false
 
+Style/ArrayIntersect:
+  Enabled: true
+
 Style/AutoResourceCleanup:
   Enabled: true
 
@@ -445,6 +448,9 @@ Style/RedundantArgument:
   Enabled: true
 
 Style/RedundantAssignment:
+  Enabled: true
+
+Style/RedundantConstantBase:
   Enabled: true
 
 Style/RedundantEach:
