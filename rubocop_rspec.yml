@@ -50,6 +50,9 @@ RSpec/DescribeClass:
   Exclude:
     - spec/views/**/*
 
+RSpec/DuplicatedMetadata:
+  Enabled: true
+
 RSpec/EmptyLineAfterExample:
   Enabled: false
 
@@ -81,6 +84,9 @@ RSpec/ExpectInHook:
   Enabled: false
 
 RSpec/FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+
+RSpec/FactoryBot/FactoryNameStyle:
   Enabled: true
 
 # How to make your factory methods even harder to find.
@@ -119,6 +125,9 @@ RSpec/NestedGroups:
   Max: 10
 
 RSpec/NoExpectationExample:
+  Enabled: true
+
+RSpec/PendingWithoutReason:
   Enabled: true
 
 RSpec/Rails/AvoidSetupHook:

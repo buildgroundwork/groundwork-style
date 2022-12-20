@@ -229,6 +229,9 @@ Style/CommentAnnotation:
   Keywords:
     - TODO
 
+Style/ConcatArrayLiterals:
+  Enabled: true
+
 Style/Documentation:
   Enabled: false
 
@@ -451,6 +454,9 @@ Style/RedundantAssignment:
   Enabled: true
 
 Style/RedundantConstantBase:
+  Enabled: true
+
+Style/RedundantDoubleSplatHashBraces:
   Enabled: true
 
 Style/RedundantEach:
