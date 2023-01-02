@@ -358,6 +358,9 @@ Style/MapCompactWithConditionalBlock:
 Style/MapToHash:
   Enabled: true
 
+Style/MapToSet:
+  Enabled: true
+
 Style/MethodCalledOnDoEndBlock:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
   Enabled: true
@@ -366,6 +369,9 @@ Style/MethodCallWithArgsParentheses:
   Enabled: true
   AllowedMethods:
     - raise
+
+Style/MinMaxComparison:
+  Enabled: true
 
 # Don't require else clauses for if statements; sometimes a nil return value is
 # just what the doctor ordered.
@@ -565,6 +571,9 @@ Style/TrivialAccessors:
   #   @foo
   # end
   AllowPredicates: true
+
+Style/YodaExpression:
+  Enabled: true
 
 #===============
 # Lint
