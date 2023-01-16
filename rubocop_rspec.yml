@@ -17,6 +17,9 @@ RSpec/BeEq:
 RSpec/BeNil:
   Enabled: false
 
+RSpec/Capybara/MatchStyle:
+  Enabled: true
+
 RSpec/Capybara/NegationMatcher:
   Enabled: true
 
@@ -137,6 +140,9 @@ RSpec/Rails/HaveHttpStatus:
   Enabled: true
 
 RSpec/Rails/InferredSpecType:
+  Enabled: true
+
+RSpec/Rails/MinitestAssertions:
   Enabled: true
 
 RSpec/SortMetadata:

@@ -742,6 +742,9 @@ Lint/UnreachableLoop:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/UselessRescue:
+  Enabled: true
+
 Lint/UselessRuby2Keywords:
   Enabled: true
 
