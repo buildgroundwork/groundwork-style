@@ -229,6 +229,9 @@ Style/CommentAnnotation:
   Keywords:
     - TODO
 
+Style/ComparableClamp:
+  Enabled: true
+
 Style/ConcatArrayLiterals:
   Enabled: true
 
@@ -339,6 +342,9 @@ Style/IfWithBooleanLiteralBranches:
   Enabled: true
 
 Style/InPatternThen:
+  Enabled: true
+
+Style/InvertibleUnlessCondition:
   Enabled: true
 
 Style/KeywordParametersOrder:
@@ -787,6 +793,9 @@ Gemspec/DependencyVersion:
   Enabled: true
 
 Gemspec/DeprecatedAttributeAssignment:
+  Enabled: true
+
+Gemspec/DevelopmentDependencies:
   Enabled: true
 
 Gemspec/RequireMFA:
