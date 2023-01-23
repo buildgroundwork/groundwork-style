@@ -3,6 +3,22 @@ require: rubocop-rspec
 AllCops:
   Include:
     - '**/*_spec.rb'
+
+Capybara/MatchStyle:
+  Enabled: true
+
+Capybara/NegationMatcher:
+  Enabled: true
+
+Capybara/SpecificActions:
+  Enabled: true
+
+Capybara/SpecificFinders:
+  Enabled: true
+
+Capybara/SpecificMatcher:
+  Enabled: true
+
 RSpec:
   Language:
     Expectations:
@@ -16,21 +32,6 @@ RSpec/BeEq:
 
 RSpec/BeNil:
   Enabled: false
-
-RSpec/Capybara/MatchStyle:
-  Enabled: true
-
-RSpec/Capybara/NegationMatcher:
-  Enabled: true
-
-RSpec/Capybara/SpecificActions:
-  Enabled: true
-
-RSpec/Capybara/SpecificFinders:
-  Enabled: true
-
-RSpec/Capybara/SpecificMatcher:
-  Enabled: true
 
 RSpec/ChangeByZero:
   Enabled: true
