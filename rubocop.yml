@@ -480,6 +480,9 @@ Style/RedundantFileExtensionInRequire:
 Style/RedundantFetchBlock:
   Enabled: true
 
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: true
+
 Style/RedundantInitialize:
   Enabled: true
 
