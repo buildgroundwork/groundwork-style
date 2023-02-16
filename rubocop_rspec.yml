@@ -77,9 +77,9 @@ RSpec/ExampleLength:
     - hash
     - heredoc
 
+# Auxiliary verbs are not to be feared.
 RSpec/ExampleWording:
-  Exclude:
-    - spec/support/**/*
+  Enabled: false
 
 RSpec/ExcessiveDocstringSpacing:
   Enabled: true
