@@ -141,6 +141,9 @@ Rails/ReadWriteAttribute:
 Rails/RedundantPresenceValidationOnBelongsTo:
   Enabled: true
 
+Rails/ResponseParsedBody:
+  Enabled: true
+
 Rails/RootPathnameMethods:
   Enabled: true
 
