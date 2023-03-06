@@ -782,6 +782,9 @@ Metrics/ClassLength:
   Exclude:
     - db/migrate/*
 
+Metrics/CollectionLiteralLength:
+  Enabled: true
+
 Metrics/MethodLength:
   Exclude:
     - db/migrate/*
