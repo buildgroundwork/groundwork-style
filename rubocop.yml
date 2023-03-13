@@ -235,6 +235,9 @@ Style/ComparableClamp:
 Style/ConcatArrayLiterals:
   Enabled: true
 
+Style/DirEmpty:
+  Enabled: true
+
 Style/Documentation:
   Enabled: false
 
@@ -291,6 +294,9 @@ Style/ExponentialNotation:
 # More verbose, but does the extra `nil` add anything?
 Style/FetchEnvVar:
   Enabled: false
+
+Style/FileEmpty:
+  Enabled: true
 
 Style/FileRead:
   Enabled: true

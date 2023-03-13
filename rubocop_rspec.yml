@@ -146,6 +146,15 @@ RSpec/Rails/InferredSpecType:
 RSpec/Rails/MinitestAssertions:
   Enabled: true
 
+RSpec/Rails/TravelAround:
+  Enabled: true
+
+RSpec/RedundantAround:
+  Enabled: true
+
+RSpec/SkipBlockInsideExample:
+  Enabled: true
+
 RSpec/SortMetadata:
   Enabled: true
 
