@@ -235,6 +235,9 @@ Style/ComparableClamp:
 Style/ConcatArrayLiterals:
   Enabled: true
 
+Style/DataInheritance:
+  Enabled: true
+
 Style/DirEmpty:
   Enabled: true
 
@@ -490,6 +493,9 @@ Style/RedundantHeredocDelimiterQuotes:
   Enabled: true
 
 Style/RedundantInitialize:
+  Enabled: true
+
+Style/RedundantLineContinuation:
   Enabled: true
 
 Style/RedundantRegexpCharacterClass:
