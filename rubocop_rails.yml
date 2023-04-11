@@ -152,6 +152,9 @@ Rails/RootPathnameMethods:
 Rails/SkipsModelValidations:
   Enabled: false
 
+Rails/ThreeStateBooleanColumn:
+  Enabled: true
+
 Rails/ToSWithArgument:
   Enabled: true
 
