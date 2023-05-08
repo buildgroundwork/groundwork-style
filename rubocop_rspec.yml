@@ -19,6 +19,16 @@ Capybara/SpecificFinders:
 Capybara/SpecificMatcher:
   Enabled: true
 
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+
+FactoryBot/FactoryNameStyle:
+  Enabled: true
+
+# How to make your factory methods even harder to find.
+FactoryBot/SyntaxMethods:
+  Enabled: false
+
 RSpec:
   Language:
     Expectations:
@@ -92,16 +102,6 @@ RSpec/ExcessiveDocstringSpacing:
   Enabled: true
 
 RSpec/ExpectInHook:
-  Enabled: false
-
-RSpec/FactoryBot/ConsistentParenthesesStyle:
-  Enabled: true
-
-RSpec/FactoryBot/FactoryNameStyle:
-  Enabled: true
-
-# How to make your factory methods even harder to find.
-RSpec/FactoryBot/SyntaxMethods:
   Enabled: false
 
 RSpec/IdenticalEqualityAssertion:
