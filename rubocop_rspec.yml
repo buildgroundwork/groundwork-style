@@ -19,6 +19,9 @@ Capybara/SpecificFinders:
 Capybara/SpecificMatcher:
   Enabled: true
 
+FactoryBot:
+  Enabled: false
+
 FactoryBot/ConsistentParenthesesStyle:
   Enabled: true
 
