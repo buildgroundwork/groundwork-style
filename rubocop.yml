@@ -267,6 +267,9 @@ Style/EndlessMethod:
 Style/EnvHome:
   Enabled: true
 
+Style/ExactRegexpMatch:
+  Enabled: true
+
 # Sometimes using yield is more clear.
 Style/ExplicitBlockArgument:
   Enabled: false
@@ -818,6 +821,7 @@ Gemspec/DeprecatedAttributeAssignment:
 
 Gemspec/DevelopmentDependencies:
   Enabled: true
+  EnforcedStyle: gemspec
 
 Gemspec/RequireMFA:
   Enabled: true
