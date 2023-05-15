@@ -819,9 +819,10 @@ Gemspec/DependencyVersion:
 Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
 
+# Gems should use the gemspec, while applications don't have a gemspec, so this
+# is really context-dependent.
 Gemspec/DevelopmentDependencies:
-  Enabled: true
-  EnforcedStyle: gemspec
+  Enabled: false
 
 Gemspec/RequireMFA:
   Enabled: true
