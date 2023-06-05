@@ -474,6 +474,9 @@ Style/RaiseArgs:
 Style/RedundantArgument:
   Enabled: true
 
+Style/RedundantArrayConstructor:
+  Enabled: true
+
 Style/RedundantAssignment:
   Enabled: true
 
@@ -486,10 +489,13 @@ Style/RedundantDoubleSplatHashBraces:
 Style/RedundantEach:
   Enabled: true
 
+Style/RedundantFetchBlock:
+  Enabled: true
+
 Style/RedundantFileExtensionInRequire:
   Enabled: true
 
-Style/RedundantFetchBlock:
+Style/RedundantFilterChain:
   Enabled: true
 
 Style/RedundantHeredocDelimiterQuotes:
@@ -502,6 +508,9 @@ Style/RedundantLineContinuation:
   Enabled: true
 
 Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpConstructor:
   Enabled: true
 
 Style/RedundantRegexpEscape:
