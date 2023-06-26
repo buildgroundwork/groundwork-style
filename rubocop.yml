@@ -483,6 +483,9 @@ Style/RedundantAssignment:
 Style/RedundantConstantBase:
   Enabled: true
 
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: true
+
 Style/RedundantDoubleSplatHashBraces:
   Enabled: true
 
@@ -505,6 +508,9 @@ Style/RedundantInitialize:
   Enabled: true
 
 Style/RedundantLineContinuation:
+  Enabled: true
+
+Style/RedundantRegexpArgument:
   Enabled: true
 
 Style/RedundantRegexpCharacterClass:
@@ -532,6 +538,9 @@ Style/RegexpLiteral:
 
 Style/RescueStandardError:
   EnforcedStyle: implicit
+
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
 
 Style/SelectByRegexp:
   Enabled: true
@@ -604,6 +613,9 @@ Style/TrivialAccessors:
   #   @foo
   # end
   AllowPredicates: true
+
+Style/YAMLFileRead:
+  Enabled: true
 
 Style/YodaExpression:
   Enabled: true
@@ -705,6 +717,9 @@ Lint/Loop:
 Lint/MissingSuper:
   Enabled: true
 
+Lint/MixedCaseRange:
+  Enabled: true
+
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
@@ -727,6 +742,9 @@ Lint/RaiseException:
   Enabled: true
 
 Lint/RedundantDirGlobSort:
+  Enabled: true
+
+Lint/RedundantRegexpQuantifiers:
   Enabled: true
 
 Lint/RedundantSafeNavigation:
