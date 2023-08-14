@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 
   # rubocop 1.16.1 has a bug: https://github.com/rubocop/rubocop/issues/9861
   spec.add_dependency("rubocop", "~> 1.53")
-  spec.add_dependency("rubocop-performance", "~> 1.13")
+  spec.add_dependency("rubocop-performance", "~> 1.19")
   spec.add_dependency("rubocop-rails", "~> 2.19")
   spec.add_dependency("rubocop-rake", "~> 0.6")
   spec.add_dependency("rubocop-rspec", "~> 2.23")
