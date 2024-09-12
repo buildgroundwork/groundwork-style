@@ -4,34 +4,6 @@ AllCops:
   Include:
     - '**/*_spec.rb'
 
-Capybara/MatchStyle:
-  Enabled: true
-
-Capybara/NegationMatcher:
-  Enabled: true
-
-Capybara/SpecificActions:
-  Enabled: true
-
-Capybara/SpecificFinders:
-  Enabled: true
-
-Capybara/SpecificMatcher:
-  Enabled: true
-
-FactoryBot:
-  Enabled: false
-
-FactoryBot/ConsistentParenthesesStyle:
-  Enabled: true
-
-FactoryBot/FactoryNameStyle:
-  Enabled: true
-
-# How to make your factory methods even harder to find.
-FactoryBot/SyntaxMethods:
-  Enabled: false
-
 RSpec:
   Language:
     Expectations:
@@ -151,24 +123,6 @@ RSpec/NoExpectationExample:
   Enabled: true
 
 RSpec/PendingWithoutReason:
-  Enabled: true
-
-RSpec/Rails/AvoidSetupHook:
-  Enabled: true
-
-RSpec/Rails/HaveHttpStatus:
-  Enabled: true
-
-RSpec/Rails/InferredSpecType:
-  Enabled: true
-
-RSpec/Rails/MinitestAssertions:
-  Enabled: true
-
-RSpec/Rails/NegationBeValid:
-  Enabled: true
-
-RSpec/Rails/TravelAround:
   Enabled: true
 
 RSpec/ReceiveMessages:

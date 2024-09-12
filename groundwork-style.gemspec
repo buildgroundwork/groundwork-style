@@ -27,7 +27,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-performance", "~> 1.19")
   spec.add_dependency("rubocop-rails", "~> 2.19")
   spec.add_dependency("rubocop-rake", "~> 0.6")
-  spec.add_dependency("rubocop-rspec", "~> 2.23")
+  spec.add_dependency("rubocop-rspec", "~> 3.0.5")
+  spec.add_dependency("rubocop-rspec_rails", "~> 2.29.1")
   spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.4")
 
   spec.metadata = { "rubygems_mfa_required" => "true" }
