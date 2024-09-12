@@ -30,8 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-rspec", "~> 2.23")
   spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.4")
 
-  spec.add_development_dependency("rake", "~> 13.0.3")
-  spec.add_development_dependency("rspec", "~> 3.10")
   spec.metadata = { "rubygems_mfa_required" => "true" }
 end
 
