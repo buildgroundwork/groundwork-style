@@ -23,13 +23,13 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # rubocop 1.16.1 has a bug: https://github.com/rubocop/rubocop/issues/9861
-  spec.add_dependency("rubocop", "~> 1.53")
-  spec.add_dependency("rubocop-performance", "~> 1.19")
-  spec.add_dependency("rubocop-rails", "~> 2.19")
-  spec.add_dependency("rubocop-rake", "~> 0.6")
+  spec.add_dependency("rubocop", "~> 1.66.1")
+  spec.add_dependency("rubocop-performance", "~> 1.21.1")
+  spec.add_dependency("rubocop-rails", "~> 2.26.1")
+  spec.add_dependency("rubocop-rake", "~> 0.6.0")
   spec.add_dependency("rubocop-rspec", "~> 3.0.5")
-  spec.add_dependency("rubocop-rspec_rails", "~> 2.29.1")
-  spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.4")
+  spec.add_dependency("rubocop-rspec_rails", "~> 2.30.0")
+  spec.add_dependency("rubocop-thread_safety", "~> 0.5.1")
 
   spec.metadata = { "rubygems_mfa_required" => "true" }
 end

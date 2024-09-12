@@ -51,6 +51,9 @@ Rails/AttributeDefaultBlockValue:
 Rails/CompactBlank:
   Enabled: true
 
+Rails/DangerousColumnNames:
+  Enabled: true
+
 Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
 
@@ -78,10 +81,16 @@ Rails/DynamicFindBy:
 Rails/EagerEvaluationLogMessage:
   Enabled: true
 
+Rails/EnumSyntax:
+  Enabled: true
+
 # This expects we'll copy all environment variables into the Rails config,
 # which seems like a waste of time.
 Rails/EnvironmentVariableAccess:
   Enabled: false
+
+Rails/EnvLocal:
+  Enabled: true
 
 Rails/ExpandedDateRange:
   Enabled: true
@@ -138,6 +147,9 @@ Rails/NotNullColumn:
 Rails/ReadWriteAttribute:
   Enabled: false
 
+Rails/RedundantActiveRecordAllMethod:
+  Enabled: true
+
 Rails/RedundantPresenceValidationOnBelongsTo:
   Enabled: true
 
@@ -145,6 +157,9 @@ Rails/ResponseParsedBody:
   Enabled: true
 
 Rails/RootPathnameMethods:
+  Enabled: true
+
+Rails/SelectMap:
   Enabled: true
 
 # We want to skip validations in specs to keep them nice and fast.
@@ -161,7 +176,13 @@ Rails/ToSWithArgument:
 Rails/TopLevelHashWithIndifferentAccess:
   Enabled: true
 
+Rails/UnusedRenderContent:
+  Enabled: true
+
 Rails/WhereMissing:
+  Enabled: true
+
+Rails/WhereRange:
   Enabled: true
 
 # Add Rails-specific file exclusions

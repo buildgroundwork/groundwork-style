@@ -373,6 +373,9 @@ Style/MagicCommentFormat:
 Style/MapCompactWithConditionalBlock:
   Enabled: true
 
+Style/MapIntoArray:
+  Enabled: true
+
 Style/MapToHash:
   Enabled: true
 
@@ -507,6 +510,9 @@ Style/RedundantHeredocDelimiterQuotes:
 Style/RedundantInitialize:
   Enabled: true
 
+Style/RedundantInterpolationUnfreeze:
+  Enabled: true
+
 Style/RedundantLineContinuation:
   Enabled: true
 
@@ -554,6 +560,9 @@ Style/Send:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#prefer-public-send'
   Enabled: true
 
+Style/SendWithLiteralMethodName:
+  Enabled: true
+
 # Throwing an exception does not necessarily mean failure.
 Style/SignalException:
   Description: 'Checks for proper usage of fail and raise.'
@@ -567,6 +576,9 @@ Style/SingleArgumentDig:
 # general names.
 Style/SingleLineBlockParams:
   Enabled: false
+
+Style/SingleLineDoEndBlock:
+  Enabled: true
 
 Style/SlicingWithRange:
   Enabled: true
@@ -587,6 +599,12 @@ Style/StringLiterals:
   Exclude:
     # auto-generated
     - bin/**/*
+
+Style/SuperArguments:
+  Enabled: true
+
+Style/SuperWithArgsParentheses:
+  Enabled: true
 
 Style/SwapValues:
   Enabled: true
@@ -706,7 +724,13 @@ Lint/IdentityComparison:
 Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: true
+
 Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+Lint/LiteralAssignmentInCondition:
   Enabled: true
 
 # This issue is rare, and in the case that it comes up there's generally a very
@@ -796,6 +820,9 @@ Lint/UnreachableLoop:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/UselessNumericOperation:
+  Enabled: true
+
 Lint/UselessRescue:
   Enabled: true
 
@@ -840,6 +867,9 @@ Metrics/ParameterLists:
 #===============
 # Gemspec
 #===============
+Gemspec/AddRuntimeDependency:
+  Enabled: true
+
 Gemspec/DependencyVersion:
   Enabled: true
 
