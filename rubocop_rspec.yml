@@ -137,6 +137,9 @@ RSpec/SkipBlockInsideExample:
 RSpec/SortMetadata:
   Enabled: true
 
+RSpec/StringAsInstanceDoubleConstant:
+  Enabled: true
+
 RSpec/StubbedMock:
   Enabled: true
 
