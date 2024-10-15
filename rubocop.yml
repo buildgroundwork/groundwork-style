@@ -692,6 +692,9 @@ Lint/DuplicateRescueException:
 Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
 
+Lint/DuplicateSetElement:
+  Enabled: true
+
 # We don't want to allow empty blocks. We don't want blocks with comments to be
 # an exceptions to this rule.
 Lint/EmptyBlock:
