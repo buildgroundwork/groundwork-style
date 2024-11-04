@@ -160,6 +160,9 @@ Naming/VariableNumber:
 Style/AccessorGrouping:
   Enabled: true
 
+Style/AmbiguousEndlessMethodDefinition:
+  Enabled: true
+
 Style/ArgumentsForwarding:
   Enabled: true
 
@@ -174,6 +177,9 @@ Style/AutoResourceCleanup:
   Enabled: true
 
 Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/BitwisePredicate:
   Enabled: true
 
 # JSON matchers involve a lot of chaining, which looks much better with {...}
@@ -212,6 +218,9 @@ Style/CollectionMethods:
     find: 'detect'
     keep_if: 'select!'
     delete_if: 'reject!'
+
+Style/CombinableDefined:
+  Enabled: true
 
 # This rule is marked "unsafe" because it may affect logic incorrectly.
 # This check is best left to the judgement of human brains.
@@ -357,6 +366,9 @@ Style/InPatternThen:
   Enabled: true
 
 Style/InvertibleUnlessCondition:
+  Enabled: true
+
+Style/KeywordArgumentsMerging:
   Enabled: true
 
 Style/KeywordParametersOrder:
@@ -546,6 +558,9 @@ Style/RescueStandardError:
   EnforcedStyle: implicit
 
 Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/SafeNavigationChainLength:
   Enabled: true
 
 Style/SelectByRegexp:
@@ -809,6 +824,9 @@ Lint/TrailingCommaInAttributeDeclaration:
   Enabled: true
 
 Lint/TripleQuotes:
+  Enabled: true
+
+Lint/UnescapedBracketInRegexp:
   Enabled: true
 
 Lint/UnexpectedBlockArity:
