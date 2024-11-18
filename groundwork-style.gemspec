@@ -19,7 +19,11 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  #
+  # There's no concurrency issue here.
+  # rubocop:disable ThreadSafety/DirChdir
   spec.files = Dir.chdir(File.expand_path(__dir__)) { `git ls-files -z`.split("\x0") }
+  # rubocop:enable ThreadSafety/DirChdir
   spec.require_paths = ["lib"]
 
   # rubocop 1.16.1 has a bug: https://github.com/rubocop/rubocop/issues/9861
@@ -29,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-rake", "~> 0.6.0")
   spec.add_dependency("rubocop-rspec", "~> 3.2.0")
   spec.add_dependency("rubocop-rspec_rails", "~> 2.30.0")
-  spec.add_dependency("rubocop-thread_safety", "~> 0.5.1")
+  spec.add_dependency("rubocop-thread_safety", "~> 0.6.0")
 
   spec.metadata = { "rubygems_mfa_required" => "true" }
 end
