@@ -247,6 +247,9 @@ Style/ConcatArrayLiterals:
 Style/DataInheritance:
   Enabled: true
 
+Style/DigChain:
+  Enabled: true
+
 Style/DirEmpty:
   Enabled: true
 
@@ -313,7 +316,13 @@ Style/FetchEnvVar:
 Style/FileEmpty:
   Enabled: true
 
+Style/FileNull:
+  Enabled: true
+
 Style/FileRead:
+  Enabled: true
+
+Style/FileTouch:
   Enabled: true
 
 Style/FileWrite:
@@ -745,6 +754,9 @@ Lint/IncompatibleIoSelectWithFiberScheduler:
 Lint/ItWithoutArgumentsInBlock:
   Enabled: true
 
+Lint/HashNewWithKeywordArgumentsAsDefault:
+  Enabled: true
+
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
 
@@ -772,6 +784,9 @@ Lint/NoReturnInBeginEndBlocks:
   Enabled: true
 
 Lint/NumberedParameterAssignment:
+  Enabled: true
+
+Lint/NumericOperationWithConstantResult:
   Enabled: true
 
 Lint/OutOfRangeRegexpRef:
@@ -836,6 +851,9 @@ Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
 Lint/UnreachableLoop:
+  Enabled: true
+
+Lint/UselessDefined:
   Enabled: true
 
 Lint/UselessMethodDefinition:
