@@ -133,6 +133,9 @@ Rails/MatchRoute:
 Rails/MigrationClassName:
   Enabled: true
 
+Rails/MultipleRoutePaths:
+  Enabled: true
+
 Rails/NegateInclude:
   Enabled: true
 
@@ -166,6 +169,9 @@ Rails/SelectMap:
 # We should know when to skip validations outside of specs
 Rails/SkipsModelValidations:
   Enabled: false
+
+Rails/StrongParametersExpect:
+  Enabled: true
 
 Rails/ThreeStateBooleanColumn:
   Enabled: true
